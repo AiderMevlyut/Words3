@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/black_han_sans</item>
+        <item>@font/rubik_mono_one</item>
+        <item>@font/ruge_boogie</item>
+        <item>@font/ruluko</item>
+        <item>@font/rum_raisin</item>
+    </array>
+</resources>

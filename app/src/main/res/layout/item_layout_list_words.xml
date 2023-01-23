@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/constLayoutListW">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewListWords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_categoryListWords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Семья. Друзья"
+            android:background="@color/dark_brown"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/dark_orange" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_Eng_ListW"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewListWords">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/dark_orange">
+
+            <ImageView
+                android:id="@+id/iv_volume_res_ListW"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_volume_up_24"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:orientation="vertical"
+                android:background="@color/light_orange">
+
+                <TextView
+                    android:id="@+id/tv_word_res_ListW"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="coffee"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/tv_translate_res_ListW"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="кофе"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/tv_learned_res_ListW"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_orange"
+                    android:textSize="18dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_delete_res_ListW"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_delete_outline_24"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_lessons"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Словарь"/>
+    <item
+        android:id="@+id/item_competitions"
+        android:icon="@drawable/ic_baseline_statistics_chart_24"
+        android:title="Достижения"/>
+    <item
+        android:id="@+id/item_profile"
+        android:icon="@drawable/ic_baseline_word_add_24"
+        android:title="Добавить"/>
+    <item
+        android:id="@+id/item_abc"
+        android:icon="@drawable/ic_baseline_abc_24"
+        android:title="Слова"/>
+</menu>
